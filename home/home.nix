@@ -7,7 +7,7 @@
 
   home.packages = with pkgs; [
     tailscale
-    netavark
+    #netavark
 
     anki-sync-server
 

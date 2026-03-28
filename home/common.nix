@@ -131,18 +131,14 @@
       syntaxHighlighting.highlighters = [
         "main" "brackets" "pattern" "cursor" "regexp" "root" "line"
       ];
-      initExtraFirst = ''
+      initContent = ''
         if [[ -r "$\{XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-$\{USER}.zsh" ]]; then
           source "$\{XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-$\{USER}.zsh"
         fi
-      '';
-
-      # 这里的代码会放在 .zshrc 的最后
-      initExtra = ''
         # 加载你放在 dotfiles 里的 p10k 配置文件
         [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
         
-        ${builtins.readFile ./dotfiles/zshrc}
+        ${builtins.readFile ./dotfiles/.zshrc}
       '';
   };
 

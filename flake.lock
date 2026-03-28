@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "dotfiles": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1774608265,
+        "narHash": "sha256-AOBOGeZAI+rGmucGrXNB9I+RzMqGD5vUGsCjqMbpcJQ=",
+        "owner": "CzealChen",
+        "repo": "dotfiles",
+        "rev": "bbb59c8c0eb1e6f0453a19a5ebace4ae1f25402b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "CzealChen",
+        "repo": "dotfiles",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "inputs": {
         "systems": "systems"
@@ -57,6 +73,7 @@
     },
     "root": {
       "inputs": {
+        "dotfiles": "dotfiles",
         "flake-utils": "flake-utils",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs"

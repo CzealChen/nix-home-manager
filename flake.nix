@@ -38,7 +38,7 @@
               username = username;
               homeDirectory = "/home/${username}";
               stateVersion = "25.05";
-            }
+            };
           }];
         };
         "darwin" = home-manager.lib.homeManagerConfiguration {
@@ -54,7 +54,7 @@
               username = username;
               homeDirectory = "/Users/${username}";
               stateVersion = "25.05";
-            }
+            };
           }];
           };
     };    

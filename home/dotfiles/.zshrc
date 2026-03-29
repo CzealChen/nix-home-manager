@@ -33,6 +33,7 @@ gdb-tmux() {
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias ll='ls -la'
-alias sc='source ~/.zshrc'
-export PATH="$HOME/.loacal/bin:$PATH"
+alias sc='source ~/.zshrc'pip install -e . -v --no-build-isolation
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 

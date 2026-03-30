@@ -10,6 +10,10 @@
     zsh-powerlevel10k
     zsh-completions
     zsh-forgit
+
+    libiconv
+
+    
     # --- Modern CLI Replacements (现代 Rust 命令行替代工具) ---
     eza          # ls 替代
     bat          # cat 替代
